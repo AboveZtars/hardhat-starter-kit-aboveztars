@@ -4,7 +4,7 @@ module.exports = async ({getNamedAccounts, deployments}) => {
     const {deployer} = await getNamedAccounts();
     await deploy('Greeter', {
       from: deployer,
-      args:[],
+      args:["Hello World"],
       log: true,
     });
   };
